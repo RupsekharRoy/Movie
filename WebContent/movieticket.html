@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv = "Content-Type" content = "text/html" charset="ISO-8859-1">
+<title>Insert title here</title>
+<script>
+function validator(){
+	var name = document.myform.t1.value;
+	var mobile = document.myform.t2.value;
+	var email = document.myform.t3.value;
+	var password = document.myform.t4.value;
+	var conpassword = document.myform.t5.value;
+	var validmobile=/[7-9]{1}[0-9]{9}$/
+	var validemail = /[a-zA-Z0-9._-]+[@]{1}[a-z]+[.]{1}[a-zA-Z]{3}$/
+	
+	if(name==""){
+		alert("Enter first name");
+		return false;
+	}
+	if(mobile==""){
+		alert("Enter mobile no");
+		return false;
+	}
+	if(email==""){
+		alert("Enter email id");
+		return false;
+	}
+	if(isNaN(mobile)){
+		alert("Invalid Phone number");
+		return false;
+	}
+	if(!(validmobile.test(mobile))){
+		alert("Mobile number not correct");
+		return false;
+	}
+	if(!(validemail.test(email))){
+		alert("Email not correct");
+		return fasle;
+	}
+	return true;
+}
+</script>
+</head>
+<center>
+<body background="reg.jpg">
+<form name ="myform" action="Registration" method="post" onsubmit="return validator();">
+<p><h1 style="color:#fff">Enter Name:<input type="text" name="t1"placeholder="Enter your name"></h1></p><br>
+<p><h1 style="color:#fff">Enter Mobile Number:<input type="text" name="t2"placeholder="Enter mobile no"></h1></p><br>
+<p><h1 style="color:#fff">Enter MailId:<input type="text" name="t3"placeholder="Enter gmail"></h1></p><br>
+<p><h1 style="color:#fff">Enter Password:<input type="password" name="t4"placeholder="Password"></h1></p><br>
+<p><h1 style="color:#fff">Enter Confirm Password:<input type="password" name="t5"placeholder="Confirm Password"></h1></p><br>
+<input type="submit" value="SignUp">
+</form>
+</body>
+</center>
+</html>
