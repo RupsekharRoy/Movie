@@ -8,9 +8,7 @@
 </head>
 <link rel="stylesheet" type="text/css" href="mpcss.css">
 <div class="topnav" id="myTopnav">
-  <a href="bolly.jsp">BOLLYWOOD</a>
-  <a href="hollly.jsp">HOLLYWOOD</a>
-  <a href="tolly.jsp">TOLLYWOOD</a>
+<a href="bolly.jsp">BOLLYWOOD</a>
 </div>
 <center>
 <body  background="book.jpg">
