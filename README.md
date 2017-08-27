@@ -1,0 +1,1 @@
+It is an online movie ticket booking system where customer can book tickets for different cinema in various cinema halls in anytime. It is basically made for providing the customer an anytime and anywhere service for booking the seat in the hall. 
