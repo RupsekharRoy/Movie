@@ -15,7 +15,7 @@ public class CustomerDAO1 {
 	public static  Connection connect(){
 		try{
 		Class.forName("com.mysql.jdbc.Driver");
-		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/movie_admin","user","12345");
+		con = DriverManager.getConnection("jdbc:mysql://localhost:3306/globsyn","user","user123");
 		}
 		catch(Exception e){
 			System.out.println(e);
