@@ -45,7 +45,7 @@ public class Mlogadmin extends HttpServlet {
 			sc.setAttribute("key3", email);
 			
 			
-			response.sendRedirect("mcustomerview.jsp");
+			response.sendRedirect("movie1.jsp");
 		}
 		else{
 			out.println("wrong credential");
